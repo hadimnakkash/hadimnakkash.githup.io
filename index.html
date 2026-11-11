@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hadi Mnakkash — Mechanical and Electrical Engineer specializing in Mechanical Power, engineering design, research, and industrial maintenance.">
+  <meta name="author" content="Hadi Mnakkash">
+  <meta name="theme-color" content="#101d2b">
+  <title>Hadi Mnakkash | Mechanical Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--navy:#101d2b;--navy2:#172a3d;--blue:#2878a8;--cyan:#61c2d4;--ink:#172333;--muted:#657487;--line:#e3e9ef;--paper:#f5f8fb;--white:#fff}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:"DM Sans",sans-serif;color:var(--ink);background:var(--white);line-height:1.65}
+    h1,h2,h3,.brand{font-family:Manrope,sans-serif} a{color:inherit;text-decoration:none}
+    .container{width:min(1120px,calc(100% - 40px));margin:auto}
+    header{position:sticky;top:0;z-index:20;background:rgba(16,29,43,.96);backdrop-filter:blur(12px);color:#fff;border-bottom:1px solid rgba(255,255,255,.09)}
+    nav{height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{font-weight:800;letter-spacing:.09em;font-size:15px}.brand span{color:var(--cyan)}
+    .navlinks{display:flex;gap:26px;font-size:13px;color:#d9e2eb}.navlinks a:hover{color:var(--cyan)}
+    .menu{display:none;background:none;border:1px solid #506174;color:#fff;border-radius:8px;padding:8px 12px}
+    .hero{background:radial-gradient(circle at 80% 15%,#244761 0,transparent 34%),linear-gradient(125deg,var(--navy),#142b40 70%,#17374c);color:#fff;overflow:hidden}
+    .hero-inner{min-height:590px;display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:55px;padding:78px 0}
+    .eyebrow{color:var(--cyan);font-size:12px;font-weight:700;letter-spacing:.2em;text-transform:uppercase}
+    h1{font-size:clamp(42px,6vw,68px);line-height:1.08;letter-spacing:-.045em;margin:18px 0}
+    .hero h1 span{color:var(--cyan)} .hero p{color:#c7d3df;max-width:620px;font-size:17px}
+    .actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 19px;border-radius:6px;font-weight:700;font-size:13px;border:1px solid transparent}
+    .btn.primary{background:var(--cyan);color:#102233}.btn.secondary{border-color:#6d8294;color:#fff}
+    .hero-card{border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.055);padding:28px;border-radius:14px;box-shadow:0 25px 70px #07111d55}
+    .hero-card .symbol{width:66px;height:66px;border:1px solid #5d8197;border-radius:12px;display:grid;place-items:center;color:var(--cyan);font-size:28px;margin-bottom:24px}
+    .hero-card h3{font-size:19px;margin:0 0 8px}.hero-card p{font-size:14px;margin:0 0 22px}
+    .statline{display:flex;justify-content:space-between;padding:12px 0;border-top:1px solid #ffffff20;color:#d7e1e9;font-size:13px}.statline strong{color:#fff}
+    section{padding:86px 0}.section-head{max-width:680px;margin-bottom:38px}.kicker{color:var(--blue);font-weight:700;font-size:11px;letter-spacing:.18em;text-transform:uppercase}
+    h2{font-size:clamp(29px,4vw,40px);line-height:1.2;letter-spacing:-.035em;margin:10px 0 14px}.lead{color:var(--muted);font-size:16px}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:start}
+    .about-copy p{color:var(--muted)}.focus-list{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .focus{padding:17px;border:1px solid var(--line);border-radius:9px;background:#fff}.focus b{display:block;font-size:14px}.focus small{color:var(--muted)}
+    .projects{background:var(--paper)}.project-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .project{background:#fff;border:1px solid var(--line);border-radius:11px;overflow:hidden}
+    .project-top{height:145px;background:linear-gradient(135deg,#14283a,#2b607b);display:flex;align-items:center;justify-content:center;color:#8bd8e5;font-size:38px;position:relative}
+    .project-top:after{content:"ENGINEERING STUDY";position:absolute;bottom:14px;left:18px;font-size:9px;letter-spacing:.2em;color:#d1e5eb}
+    .project-body{padding:22px}.project-body h3{font-size:17px;margin:0 0 9px}.project-body p{font-size:13px;color:var(--muted);margin:0 0 15px}
+    .tag{display:inline-block;background:#edf5f8;color:#28617c;border-radius:4px;padding:5px 8px;font-size:10px;font-weight:700;margin:3px 3px 0 0}
+    .skills-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.skill{padding:20px;border-left:3px solid var(--cyan);background:var(--paper);font-weight:700;font-size:14px}
+    .experience{background:var(--navy);color:#fff}.experience .lead{color:#c2cfda}.experience-box{border:1px solid #ffffff24;padding:26px;border-radius:10px;max-width:780px}.experience-box p{color:#c2cfda;margin-bottom:0}
+    .contact{background:#f5f8fb}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px}.contact-card{background:#fff;border:1px solid var(--line);padding:25px;border-radius:10px}.contact-links{display:flex;flex-direction:column;gap:12px}.contact-links a{color:var(--blue);font-weight:700;font-size:14px;overflow-wrap:anywhere}
+    footer{background:#0b1621;color:#aebdca;padding:25px 0;font-size:12px}.footer-inner{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+    @media(max-width:800px){.hero-inner,.about-grid,.contact-grid{grid-template-columns:1fr}.hero-inner{gap:35px;min-height:auto}.project-grid{grid-template-columns:1fr 1fr}.skills-grid{grid-template-columns:1fr 1fr}.navlinks{display:none;position:absolute;top:76px;left:0;right:0;background:var(--navy);padding:20px;flex-direction:column}.navlinks.open{display:flex}.menu{display:block}}
+    @media(max-width:520px){.project-grid{grid-template-columns:1fr}.focus-list{grid-template-columns:1fr}.hero-inner{padding:65px 0}section{padding:65px 0}}
+  </style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <nav>
+      <a class="brand" href="#home">HADI <span>MNAKKASH</span></a>
+      <button class="menu" aria-label="Toggle navigation" onclick="document.querySelector('.navlinks').classList.toggle('open')">Menu</button>
+      <div class="navlinks">
+        <a href="#about">About</a><a href="#projects">Projects</a><a href="#expertise">Expertise</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </div>
+</header>
+<main>
+  <section class="hero" id="home">
+    <div class="container hero-inner">
+      <div>
+        <div class="eyebrow">Mechanical Engineering · Professional Portfolio</div>
+        <h1>Hadi <span>Mnakkash</span></h1>
+        <p>Mechanical Engineer focused on engineering design, simulation, modeling, and practical problem-solving for mechanical and industrial systems.</p>
+        <div class="actions">
+          <a class="btn primary" href="#projects">Explore Projects</a>
+          <a class="btn secondary" href="#contact">Get in Touch</a>
+        </div>
+      </div>
+      <aside class="hero-card">
+        <img src="assets/hadi-mnakkash.jpg" alt="Portrait of Hadi Mnakkash" style="width:118px;height:118px;object-fit:cover;border-radius:50%;border:3px solid #61c2d4;margin-bottom:22px">
+        <h3>Engineering Through Analysis</h3>
+        <p>Mechanical & Electrical Engineer specializing in Mechanical Power, with experience in engineering design, fabrication support, research, and industrial maintenance.</p>
+        <div class="statline"><span>Core discipline</span><strong>Mechanical</strong></div>
+        <div class="statline"><span>Focus</span><strong>Design & Simulation</strong></div>
+        <div class="statline"><span>Portfolio</span><strong>Selected Studies</strong></div>
+      </aside>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <div class="section-head"><div class="kicker">01 / About</div><h2>About Me</h2><p class="lead">A practical, curious, and detail-oriented approach to mechanical engineering.</p></div>
+      <div class="about-grid">
+        <div class="about-copy">
+          <p>I am a Mechanical and Electrical Engineer specializing in Mechanical Power, with experience in engineering research, design, fabrication support, and industrial maintenance. My work combines technical problem-solving with practical field experience.</p>
+          <p>Since March 2025, I have worked as an Engineer at Hama Cement Plant, designing components subject to wear, supervising their manufacturing, preparing maintenance reports, and supporting technical interventions during emergency breakdowns.</p>
+          <p>My professional background also includes engineering research and freelance work through Mostaql and Khamsat, preparing research papers and presentations, and translating technical research from Arabic into English. I hold a British Board certificate in Trainer Preparation.</p>
+        </div>
+        <div class="focus-list">
+          <div class="focus"><b>Simulation</b><small>Structural and thermal studies</small></div>
+          <div class="focus"><b>Modeling</b><small>3D mechanical models</small></div>
+          <div class="focus"><b>Design</b><small>Mechanical components and systems</small></div>
+          <div class="focus"><b>Communication</b><small>Client coordination and training</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="projects" id="projects">
+    <div class="container">
+      <div class="section-head"><div class="kicker">02 / Selected Work</div><h2>Engineering Projects</h2><p class="lead">Engineering work and technical interests. Individual case studies, drawings, simulation images, and verified results can be added as portfolio items.</p></div>
+      <div class="project-grid">
+        <article class="project"><div class="project-top">∿</div><div class="project-body"><h3>Industrial Pipe Flexibility</h3><p>Pipe flexibility and structural-analysis study focused on support conditions, thermal expansion, deformation, and stress interpretation.</p><span class="tag">ANSYS Mechanical</span><span class="tag">Structural Analysis</span><span class="tag">Thermal Loading</span></div></article>
+        <article class="project"><div class="project-top">◉</div><div class="project-body"><h3>Fan Flow & Vibration Study</h3><p>Mechanical engineering study exploring airflow behavior and vibration considerations for a fan assembly and its supporting structure.</p><span class="tag">CFD</span><span class="tag">Vibration</span><span class="tag">Mechanical Systems</span></div></article>
+        <article class="project"><div class="project-top">⌁</div><div class="project-body"><h3>Canopy Structural Model</h3><p>Parametric modeling and simulation study of an eight-rib polyester canopy, considering gravity, suspended mass, and aerodynamic loading.</p><span class="tag">3D Modeling</span><span class="tag">Loads</span><span class="tag">Design Study</span></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="expertise">
+    <div class="container">
+      <div class="section-head"><div class="kicker">03 / Expertise</div><h2>Technical Interests & Tools</h2><p class="lead">Areas of engineering practice and development.</p></div>
+      <div class="skills-grid">
+        <div class="skill">ANSYS</div><div class="skill">SolidWorks</div><div class="skill">AutoCAD</div><div class="skill">Microsoft Word</div><div class="skill">Microsoft Excel</div><div class="skill">Microsoft PowerPoint</div><div class="skill">Customer Communication</div><div class="skill">English & French</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="experience" id="experience">
+    <div class="container">
+      <div class="section-head"><div class="kicker">04 / Professional Background</div><h2>Experience & Development</h2><p class="lead">Engineering practice, collaboration, and continuous technical development.</p></div>
+      <div class="experience-box">
+        <h3>Engineer · Hama Cement Plant</h3>
+        <p><strong>March 2025 – Present</strong></p>
+        <ul>
+          <li>Designing parts subject to wear over time and supervising their manufacturing.</li>
+          <li>Preparing monthly reports on maintenance work completed in the internal maintenance workshop.</li>
+          <li>Providing technical intervention during emergency malfunctions.</li>
+        </ul>
+        <h3>Researcher · Khamsat & Mostaql</h3>
+        <p><strong>December 2022 – Present</strong></p>
+        <ul>
+          <li>Preparing engineering research papers and presentations.</li>
+          <li>Translating research papers from Arabic into English.</li>
+        </ul>
+        <h3>Machine Monitor · Cola Factory</h3>
+        <p><strong>May 2019 – January 2020</strong></p>
+        <p>Monitoring plastic-bottle conveyor lines and glass/plastic sorting machinery.</p>
+        <p><strong>Education:</strong> Bachelor's degree in Mechanical and Electrical Engineering, specializing in Mechanical Power, Homs University (September 2026).</p>
+        <p><strong>Additional qualification:</strong> Certificate from the British Board for Trainer Preparation.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-head"><div class="kicker">05 / Contact</div><h2>Let’s Connect</h2><p class="lead">For engineering opportunities, project discussions, or professional collaboration.</p></div>
+      <div class="contact-grid">
+        <div class="contact-card"><h3>Professional Profile</h3><p>Connect with me on LinkedIn to explore my professional background and updates.</p><div class="contact-links">
+          <a href="https://www.linkedin.com/in/hadimnakkash/" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a href="https://mostaql.com/u/hadiw2002/portfolio" target="_blank" rel="noopener">Mostaql Portfolio ↗</a>
+          <a href="https://khamsat.com/user/hadiw2002" target="_blank" rel="noopener">Khamsat Profile ↗</a>
+          <a href="mailto:hmnakkash@gmail.com">hmnakkash@gmail.com</a>
+        </div></div>
+        <div class="contact-card"><h3>Curriculum Vitae</h3><p>Download my CV to review my education, professional experience, and technical skills.</p><div class="contact-links"><a href="assets/Hadi-Mnakkash-CV.docx" download>Download CV (DOCX) ↓</a><a href="https://www.linkedin.com/in/hadimnakkash/" target="_blank" rel="noopener">View LinkedIn Profile ↗</a></div></div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer><div class="container footer-inner"><span>© <span id="year"></span> Hadi Mnakkash. All rights reserved.</span><span>Mechanical Engineering Portfolio</span></div></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
